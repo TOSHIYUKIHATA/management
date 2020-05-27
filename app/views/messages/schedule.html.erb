@@ -1,0 +1,68 @@
+<body class="c2">
+<header>
+  <div class="inner">
+    <h1 id="logo"><a href="/index">施工管理支援サイト</a></h1>
+    <div id="contact">
+      <% if user_signed_in? %>
+        <%# <%= link_to "新規投稿", new_post_path, class: "header__right--btn" %> 
+        <%= link_to "[ログアウト]", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+      <% else %>
+        <%= link_to "[ログイン]", new_user_session_path, class: "header__right--btn" %>
+        <%= link_to "[新規登録]", new_user_registration_path, class: "header__right--btn" %>
+      <% end %>
+    </div>
+  </div>
+</header>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<ul class="inner">
+<li><a href="/index">ホーム<span>HOME</span></a></li>
+<li class="current"><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="/index">ホーム<span>HOME</span></a></li>
+<li><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+
+
+<div id="contents" class="inner">
+<div id="contents-in">
+
+<div id="main2">
+
+<section>
+<h2>スケジュール・行動予定表</h2>
+</section>
+
+<!-- カレンダーの表示 -->
+<%# <div id="calendar"></div> %>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aGF0YS50b3NoaXl1a2kwOUBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>

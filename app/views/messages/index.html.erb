@@ -1,0 +1,217 @@
+<header>
+  <div class="inner">
+    <h1 id="logo"><a href="/index">施工管理支援サイト</a></h1>
+    <div id="contact">
+      <% if user_signed_in? %>
+        <%# <%= link_to "新規投稿", new_post_path, class: "header__right--btn" %> 
+        <%= link_to "[ログアウト]", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+      <% else %>
+        <%= link_to "[ログイン]", new_user_session_path, class: "header__right--btn" %>
+        <%= link_to "[新規登録]", new_user_registration_path, class: "header__right--btn" %>
+      <% end %>
+</div>
+</div>
+</header>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<ul class="inner">
+<li class="current"><a href="/index">ホーム<span>HOME</span></a></li>
+<li><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="/index">ホーム<span>HOME</span></a></li>
+<li><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+
+
+<div id="contents" class="inner">
+<div id="contents-in">
+
+<div id="main">
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="inner">
+<%= image_tag '001.jpg', class: 'slide0' %>
+<%= image_tag '001.jpg', class: 'slide1' %>
+<%= image_tag '002.jpg', class: 'slide2' %>
+<%= image_tag '003.jpg', class: 'slide3' %>
+</div>
+</aside>
+
+<p><strong class="color1">＊今月の安全標語ランキングに投票をしてみてください！</strong>
+
+<section id="new">
+<h2>本日のスケジュール</h2>
+<dl>
+<dt>2020/06/02</dt>
+<dd>14:00 個人アプリ発表会<span class="newicon">NEW</span></dd>
+<dt>20XX/00/00</dt>
+<dd>例）10:00 機器搬入。11:00 搬入検査。15:00 段階確認</dd>
+</dl>
+<p class="r">&raquo;&nbsp;<a href="#">過去イベント一覧</a></p>
+</section>
+
+<section>
+
+<h2>社内連絡・周知事項</h2>
+
+<h3>資格取得のご案内</h3>
+<p><strong class="color1">電気工事士（第一種・第二種）</strong><br>
+<p>電気工事士は、電気工事の作業に従事するために電気工作物の工事に関する専門的な知識と技能を有する者に与えられる国家資格であり、またその免状を都道府県知事により交付されている者である。こちらの<a href="https://www.shiken.or.jp/">一般財団法人　電気技術者試験センター</a>にて申し込みをお願いします。</p>
+<p><strong class="color1">■資格取得後は速やかに報告をしてください</strong>
+
+<h3>当サイトの詳しい使い方は</h3>
+<p><a href="index.html">こちらをご覧下さい。</a></p>
+
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<nav>
+<h2>施工管理とは</h2>
+<ul class="submenu">
+<li><a href="#">工程管理</a></li>
+<li><a href="#">原価管理</a></li>
+<li><a href="#">安全管理</a></li>
+<li><a href="#">品質管理</a></li>
+<li><a href="#">環境管理</a></li>
+<li><a href="#">材料管理</a></li>
+<li><a href="#">写真管理</a></li>
+<li><a href="#">出来型管理</a></li>
+</ul>
+</nav>
+
+<section>
+
+</section>
+
+<div class="box1">
+<h2>本社アクセス</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985244!2d139.76493611504867!3d35.68124053757922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1590489135825!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<p>東京都XX区XXXXビル<br>
+TEL：03-0000-0000<br>
+内線：※ ※ ※ <br>
+受付：9:00～16:00<br>
+定休日：土日祝</p>
+</div>
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-in-->
+
+<div id="side">
+
+<section>
+
+<h2>おすすめ製品</h2>
+
+<div class="list">
+<a href="#">
+<h4>製品名（１）<span class="newicon">NEW</span></h4>
+<p>製品説明。参考仕入れ価格 等</p>
+</a>
+</div>
+
+<div class="list">
+<a href="#">
+<h4>製品名（２）</h4>
+<p>製品説明。参考仕入れ価格 等</p>
+</a>
+</div>
+
+<div class="list">
+<a href="#">
+<h4>製品名（３）</h4>
+<p>製品説明。参考仕入れ価格 等</p>
+</a>
+</div>
+
+<div class="list">
+<a href="#">
+<h4>製品名（４）</h4>
+<p>製品説明。参考仕入れ価格 等</p>
+</a>
+</div>
+
+<div class="list">
+<a href="#">
+<h4>製品名（５）</h4>
+<p>製品説明。参考仕入れ価格 等</p>
+</a>
+</div>
+
+</section>
+
+<!-- Google  -->
+<form method=get action="http://www.google.co.jp/search">
+<table bgcolor="#FFFFFF"><tr><td>
+<a href="http://www.google.co.jp/">
+<img src="http://www.google.com/logos/Logo_40wht.gif" border="0" alt="Google" align="absmiddle"></a>
+<input type=text name=q size=31 maxlength=255 value="">
+<input type=hidden name=ie value=Shift_JIS>
+<input type=hidden name=oe value=Shift_JIS>
+<input type=hidden name=hl value="ja">
+<input type=submit name=btnG value="Google 検索">
+</td></tr></table>
+</form>
+<!-- Google -->
+
+<!-- Yahoo -->
+<div style="margin:0;padding:0;font-size:14pt;border:none;background-color:#FFF;">
+<form action="http://search.yahoo.co.jp/search" method="get" target="_blank" style="margin:0;padding:0;">
+<p style="margin:0;padding:0;"><a href="http://www.yahoo.co.jp/" target="_blank"><img src="http://i.yimg.jp/images/search/guide/searchbox/080318/ysearch_logo_85_22.gif" alt="Yahoo! JAPAN" style="border:none;vertical-align:middle;padding:0;border:0;" width="85" height="22"></a><input type="text" name="p" size="31"><input type="hidden" name="fr" value="yssw"><input type="hidden" name="ei" value="Shift_JIS"><input type="submit" value="検索" style="margin:0;"></p>
+</form>
+</div>
+<!-- Yahoo! -->
+
+</div>
+<!--/#side-->
+
+</div>
+<!--/#contents-->
+
+<footer>
+
+<div id="copyright">
+<small><a href="index.html">株式会社○○建設</a>   ○○部署○○チーム</small>
+<span class="pr"><a href="#" target="_blank">《え？著作権？なんですかねそれ？》</a></span>
+</div>
+
+</footer>
+
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>

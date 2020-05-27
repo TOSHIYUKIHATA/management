@@ -1,0 +1,83 @@
+<body class="c2">
+<header>
+  <div class="inner">
+    <h1 id="logo"><a href="/index">施工管理支援サイト</a></h1>
+    <div id="contact">
+      <% if user_signed_in? %>
+        <%# <%= link_to "新規投稿", new_post_path, class: "header__right--btn" %> 
+        <%= link_to "[ログアウト]", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
+      <% else %>
+        <%= link_to "[ログイン]", new_user_session_path, class: "header__right--btn" %>
+        <%= link_to "[新規登録]", new_user_registration_path, class: "header__right--btn" %>
+      <% end %>
+    </div>
+  </div>
+</header>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<ul class="inner">
+<li><a href="/index">ホーム<span>HOME</span></a></li>
+<li><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li class="current"><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="/index">ホーム<span>HOME</span></a></li>
+<li><a href="/schedule">行動予定表<span>Action schedule</span></a></li>
+<li><a href="/contact">緊急連絡先<span>emergency contact</span></a></li>
+<li><a href="/slogan">安全標語<span>Safety slogan</span></a></li>
+<li><a href="/sites">関連サイト<span>Related sites</span></a></li>
+<li><a href="/lists">関係書式一覧<span>Format lists</span></a></li>
+</ul>
+</nav>
+
+
+<div id="contents" class="inner">
+<div id="contents-in">
+
+<div id="main2">
+
+<section>
+
+<h2>関連サイト一覧</h2>
+
+<h3>各省庁サイト</h3>
+<p>ここに会社名をリンク付で表示<br>
+
+
+<h3>各ゼネコン民間サイト</h3>
+<p>ここに会社名をリンク付で表示<br>
+
+
+<h3>各代理店・商社サイト</h3>
+<p>ここに会社名をリンク付で表示<br>
+
+</section>
+
+
+
+
+
+
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
