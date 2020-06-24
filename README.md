@@ -1,5 +1,8 @@
 # README
 
+# アプリケーション情報
+
+## アプリケーション概要
 This application was developed for those who manage construction.
 I am aiming to create a site that can be viewed on both a PC and a smartphone.
 
