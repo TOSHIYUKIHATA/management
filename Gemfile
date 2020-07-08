@@ -43,6 +43,7 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -65,4 +66,5 @@ gem 'momentjs-rails'
 
 group :production do
   gem 'unicorn', '5.4.1'
+  gem 'pg'
 end
