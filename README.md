@@ -23,8 +23,7 @@ TEC::CAMPでのカリキュラム終了後、チーム開発までの時間に�
 -   Chromeの最新版を利用してアクセスしてください。
 -   ただしデプロイ等で接続できないタイミングもございます。その際は少し時間をおいてから接続してください。
 -   接続先およびログイン情報については、上記の通りです。
--   同時に複数の方がログインしている場合に、ログインできない可能性があります。
-
+-   同時に複数の方がログインしている場合に、ログインできない可能性があります。ß
 -----------------------------------
 This application was developed for those who manage construction.
 I am aiming to create a site that can be viewed on both a PC and a smartphone.
