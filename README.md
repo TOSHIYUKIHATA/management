@@ -38,5 +38,4 @@ There are many things that are lacking in functionality, but please tell me how 
 I will study hard, dreaming of the day I get used to your power.
 
 Thank you
-
 -----------------------------------
